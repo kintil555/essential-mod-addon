@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "com.kintil555.essentialrightui.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "TitleScreenMixin",
+    "PauseMenuDisplayMixin",
+    "LeftSideBarMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

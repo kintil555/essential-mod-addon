@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "essentialrightui",
+  "version": "${version}",
+  "name": "Essential Right UI",
+  "description": "Add-on for Essential: right-aligns Essential's title screen UI and moves the vanilla buttons to the left. Changes nothing in the Essential jar.",
+  "authors": ["kintil555"],
+  "license": "MIT",
+  "environment": "client",
+  "mixins": ["essentialrightui.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "26.2.x",
+    "java": ">=25",
+    "essential": "*"
+  }
+}
