@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.15.2'
+    id 'net.fabricmc.fabric-loom' version '1.15.2'
 }
 
 version = project.mod_version
@@ -7,10 +7,11 @@ base.archivesName = project.archives_base_name
 
 repositories {
     mavenCentral()
+    maven { url 'https://maven.fabricmc.net/' }
 }
 
 dependencies {
-    // Mojang mappings are implicit on 26.x (no mappings line needed).
+    // No mappings line: Loom defaults to Mojang's official mappings on 26.x.
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     implementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
